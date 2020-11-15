@@ -1,0 +1,22 @@
+{
+	"background_color": "#ffffff",
+	"theme_color": "#333333",
+	"name": "TSR Codes",
+	"short_name": "TSR Codes",
+	"display": "minimal-ui",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "logo6.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "logo2.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	]
+}

@@ -1,0 +1,138 @@
+@import url(theme.css);
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap');
+
+@font-face {
+	font-family: merienda-bold;
+	src: url(fonts/merienda-bold.woff2) format('woff2');
+	font-display: swap;
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: merienda-regular;
+	src: url(fonts/merienda-regular.woff2) format('woff2');
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: marmelad-regular;
+	src: url(fonts/marmelad-regular.woff2) format('woff2');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: arimamadurai-regular;
+	src: url(fonts/arimamadurai-regular.woff2) format('woff2');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Cascadia Code Regular';
+	src: url(fonts/cascadia.woff) format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+
+html.light {
+	--bg-color: #fbfcfd;
+	--text-color: #041424;
+	--t-color: #673ab7;
+	--c-color: #e91e63;
+	--text-color-alpha: rgba(4, 20, 36, 0.15);
+	--box-shadow: 5px 2px 14px var(--text-color-alpha), -5px -2px 14px var(--text-color-alpha);
+}
+html.dark {
+	--bg-color: #041424;
+	--text-color: #f2fbfd;
+	--t-color: #e91e63;
+	--c-color: #673ab7;
+	--text-color-alpha: rgba(255, 255, 255, 0.15);
+	--box-shadow: 2px 2px 5px var(--text-color-alpha), -2px -2px 5px var(--text-color-alpha);
+}
+html.brown {
+	--bg-color: #e4d8a6;
+	--text-color: #402b0c;
+	--t-color: #e91e63;
+	--c-color: #673ab7;
+	--text-color-alpha: rgba(25.1, 16.9, 4.7, 0.15);
+	--box-shadow: 2px 2px 4px var(--text-color-alpha), -2px -2px 4px var(--text-color-alpha);
+	--bg-code-color: #faf2fd;
+}
+
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+html {
+	--merienda-bold: 'merienda-bold';
+	--marmelad: 'marmelad-regular';
+	--arima: 'arimamadurai-regular';
+	--cascadia: 'Cascadia Code Regular';
+	--font: 'Source Sans Pro', sans-serif;
+	--fb-color: #4267b2;
+	--insta-color: #405de6;
+	--pinterest-color: #e60023;
+	--twitter-color: #1da1f2;
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+	html {
+		font-size: 50%;
+	}
+}
+@media only screen and (min-width: 56.25em) and (max-width: 75em) {
+	html {
+		font-size: 56.25%;
+	}
+}
+@media only screen and (max-width: 112.5em) {
+	html {
+		font-size: 75%;
+	}
+}
+body {
+	box-sizing: border-box;
+	font-weight: 400;
+	line-height: 1.7;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+	body {
+		padding: 0;
+		background-color: var(--bg-color);
+		color: var(--text-color);
+	}
+}
+a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--text-color);
+}
+body::-webkit-scrollbar {
+	width: 6px;
+	background-color: var(--bg-color);
+}
+body::-webkit-scrollbar-track {
+	border-radius: 5px;
+	background-color: var(--bg-color);
+}
+body::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: var(--text-color);
+}
