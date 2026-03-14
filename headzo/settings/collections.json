@@ -1,0 +1,104 @@
+[
+  {
+    "name": "articles",
+    "label": "Articles",
+    "labelSingular": "Article",
+    "hasBody": true,
+    "fields": [
+      {
+        "name": "title",
+        "label": "Title",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "slug",
+        "label": "Slug",
+        "type": "slug",
+        "required": true
+      },
+      {
+        "name": "excerpt",
+        "label": "Excerpt",
+        "type": "text"
+      },
+      {
+        "name": "category",
+        "label": "Category",
+        "type": "relation",
+        "collection": "categories"
+      },
+      {
+        "name": "tags",
+        "label": "Tags",
+        "type": "tags",
+        "collection": "tags"
+      },
+      {
+        "name": "featured",
+        "label": "Featured",
+        "type": "boolean"
+      },
+      {
+        "name": "publishedAt",
+        "label": "Published At",
+        "type": "datetime"
+      },
+      {
+        "name": "coverImage",
+        "label": "Cover Image",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "name": "categories",
+    "label": "Categories",
+    "labelSingular": "Category",
+    "hasBody": false,
+    "fields": [
+      {
+        "name": "title",
+        "label": "Title",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "slug",
+        "label": "Slug",
+        "type": "slug",
+        "required": true
+      },
+      {
+        "name": "description",
+        "label": "Description",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "tags",
+    "label": "Tags",
+    "labelSingular": "Tag",
+    "hasBody": false,
+    "fields": [
+      {
+        "name": "title",
+        "label": "Title",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "slug",
+        "label": "Slug",
+        "type": "slug",
+        "required": true
+      },
+      {
+        "name": "description",
+        "label": "Description",
+        "type": "text"
+      }
+    ]
+  }
+]
